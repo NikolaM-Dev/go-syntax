@@ -45,3 +45,23 @@ import (
 // 	newValue := "Red"
 // 	*s = newValue
 // }
+
+// // NOTE: structs
+// type User struct {
+// 	Age         int
+// 	BirthDate   time.Time
+// 	FirstName   string
+// 	LastName    string
+// 	PhoneNumber string
+// }
+//
+// func main() {
+// 	user := User{
+// 		FirstName:   "Nikola",
+// 		LastName:    "Dev",
+// 		Age:         22,
+// 		PhoneNumber: "3117742523",
+// 	}
+//
+// 	log.Println(user.FirstName, user.LastName, "BirthDate", user.BirthDate)
+// }
