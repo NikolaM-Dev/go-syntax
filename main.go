@@ -86,3 +86,22 @@ import (
 // 	log.Println("myVar is set to", myVar.printFirstName())
 // 	log.Println("myVar2 is set to", myVar2.printFirstName())
 // }
+
+// NOTE: maps
+// type User struct {
+// 	FirstName string
+// 	LastName  string
+// }
+//
+// func main() {
+// 	myMap := make(map[string]User)
+//
+// 	me := User{
+// 		FirstName: "Nikola",
+// 		LastName:  "Dev",
+// 	}
+//
+// 	myMap["me"] = me
+//
+// 	log.Println(myMap["me"])
+// }
