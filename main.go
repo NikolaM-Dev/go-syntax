@@ -154,3 +154,66 @@ import (
 //
 // 	log.Println(num)
 // }
+
+// NOTE: Json
+// type Person struct {
+// 	FirstName string `json:"first_name"`
+// 	LastName  string `json:"last_name"`
+// 	HairColor string `json:"hair_color"`
+// 	HasDog    bool   `json:"has_dog"`
+// }
+//
+// func main() {
+// 	myJson := `
+// [
+//   {
+//     "first_name": "Clark",
+//     "last_name": "Kent",
+//     "hair_color": "black",
+//     "has_dog": true
+//   },
+//   {
+//     "first_name": "Bruce",
+//     "last_name": "Wayne",
+//     "hair_color": "black",
+//     "has_dog": false
+//   }
+// ]`
+//
+// 	var persons []Person
+//
+// 	err := json.Unmarshal([]byte(myJson), &persons)
+// 	if err != nil {
+// 		log.Println("Error unmarshalling json", err)
+// 	}
+//
+// 	log.Printf("persons: %v", persons)
+//
+// 	// write json from a struct
+//
+// 	var heroes []Person
+//
+// 	wally := Person{
+// 		FirstName: "Wally",
+// 		LastName:  "West",
+// 		HairColor: "red",
+// 		HasDog:    false,
+// 	}
+//
+// 	diana := Person{
+// 		FirstName: "Diana",
+// 		LastName:  "Prince",
+// 		HairColor: "black",
+// 		HasDog:    false,
+// 	}
+//
+// 	heroes = append(heroes, wally)
+// 	heroes = append(heroes, diana)
+//
+// 	newJson, err := json.MarshalIndent(heroes, "", "  ")
+// 	if err != nil {
+// 		log.Println("Error marshaling", err)
+// 	}
+//
+// 	fmt.Println("newJSon:", string(newJson))
+// }
