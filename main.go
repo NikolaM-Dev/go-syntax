@@ -105,3 +105,10 @@ import (
 //
 // 	log.Println(myMap["me"])
 // }
+
+// NOTE: Slices
+// func main() {
+// 	names := []string{"steven", "nikola", "cat"}
+//
+// 	log.Println(names)
+// }
