@@ -123,3 +123,12 @@ import (
 // 		log.Println("Cat is not cat")
 // 	}
 // }
+
+// NOTE: packages
+// func main() {
+// 	log.Println("Hello")
+//
+// 	var myVar helpers.SomeType
+// 	myVar.TypeName = "Some name"
+// 	log.Println(myVar.TypeName)
+// }
